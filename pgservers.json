@@ -1,0 +1,65 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "wmw-POC",
+            "Group": "Servers",
+            "Host": "postgresqlpoc-a967a24a762e.deltablue.io",
+            "Port": 54321,
+            "MaintenanceDB": "postgres",
+            "Username": "bart",
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0,
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "sslcompression": 0,
+                "connect_timeout": 10
+            }
+        },
+        "2": {
+            "Name": "PostgreSQL 15",
+            "Group": "Servers",
+            "Host": "localhost",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "postgres",
+            "Comment": "Auto-detected PostgreSQL 15 installation with the data directory at /Library/PostgreSQL/15/data",
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {
+                "sslmode": "prefer"
+            }
+        },
+        "3": {
+            "Name": "PostgreSQL 16",
+            "Group": "Servers",
+            "Host": "localhost",
+            "Port": 5433,
+            "MaintenanceDB": "postgres",
+            "Username": "postgres",
+            "Comment": "Auto-detected PostgreSQL 16 installation with the data directory at /Library/PostgreSQL/16/data",
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": 10
+            }
+        },
+        "4": {
+            "Name": "Aiven",
+            "Group": "Servers",
+            "Host": "pg-212a2fb3-roots.b.aivencloud.com",
+            "Port": 19416,
+            "MaintenanceDB": "defaultdb",
+            "Username": "avnadmin",
+            "BGColor": "#FF9900",
+            "UseSSHTunnel": 0,
+            "TunnelPort": "22",
+            "TunnelAuthentication": 0,
+            "KerberosAuthentication": false,
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": 10
+            }
+        }
+    }
+}
